@@ -8,7 +8,7 @@ public class Unit2Task5 {
         int inch;
         double metr;
 
-        for (inch = 1; inch < 20; inch++) {
+        for (inch = 1; inch <= 20; inch++) {
             metr = 2.54 * inch;
 
             System.out.println(inch + " дюйм = " + metr + " сантиметров");

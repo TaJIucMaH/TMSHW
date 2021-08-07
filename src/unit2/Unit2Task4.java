@@ -7,7 +7,7 @@ public class Unit2Task4 {
         int b = 7;
         int d = 0;
 
-        if (a != 0 & b != 0) {
+        if (a != 0 && b != 0) {
             while (b != 0) {
                 d += a;
                 b--;

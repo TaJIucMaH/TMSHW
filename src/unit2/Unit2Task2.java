@@ -9,7 +9,7 @@ public class Unit2Task2 {
         int ameba = 1;
         int z = 0;
         int i = z % 10;
-        for (i = 3; i < 24; i += 3) {
+        for (i = 3; i <= 24; i += 3) {
             ameba *= 2;
             if ((i == 0) || (i >= 5) && (i <= 9) || (i >= 11) && (i <= 19)) {
                 x = "амеб";
