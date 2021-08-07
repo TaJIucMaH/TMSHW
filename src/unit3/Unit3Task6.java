@@ -19,12 +19,11 @@ public class Unit3Task6 {
             System.out.print(mas[i]+" ");
         }
         System.out.println();
-        for(int i=0; i<mas.length-1; i++) {
-            if(mas[i]>mas[i+1]) {
+        for(boolean = 0; i<mas.length-1; i++);   //почему булеан лучше? Если ставлю булеан, то код ругается.
+            if (mas[i] > mas[i + 1]) {
                 next = 1;
                 break;
             }
-        }
         if(next==1) {
             System.out.println("Последовательность не является строго возрастающей");
         } else {

@@ -17,9 +17,7 @@ public class Unit3Task0 {
             massiv[i] = (int) (-50 + (Math.random() * 100));
 
         for (int i : massiv) ;
-        //  massiv[i] = sc.nextInt();
 
-        //System.out.println(i + " ");
         System.out.println(Arrays.toString(massiv));
     }
 }

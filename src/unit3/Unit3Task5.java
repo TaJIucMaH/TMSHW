@@ -32,12 +32,12 @@ public class Unit3Task5 {
             s2 = s2 + mas2[i];
         }
         System.out.println();
-        a1 = (double) s1 / 5;
-        a2 = (double) s2 / 5;
+        a1 = (double) s1 /mas1.length;
+        a2 = (double) s2 /mas1.length;
         if (a1 < a2) {
-            System.out.println("Среднее арифм. 1-го массива больше среднего арифмю 2-го массива");
+            System.out.println("Среднее арифм. 1-го массива больше среднего арифм. 2-го массива");
         } else if (a2 < a1) {
-            System.out.println("Среднее арифм. 2-го массива больше среднего арифмю 1-го массива");
+            System.out.println("Среднее арифм. 2-го массива больше среднего арифм. 1-го массива");
         } else {
             System.out.println("Среднее арифм. 1-го и 2-го массивов равны");
         }
