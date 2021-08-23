@@ -7,8 +7,6 @@ import java.util.Scanner;
 
 public class Unit4Task0 {
 
-
-
     public static void main(String[] args) {
         System.out.println("Введите размерность матрицы");
         Scanner sc = new Scanner(System.in); //создаём объект типа Scanner
@@ -16,7 +14,7 @@ public class Unit4Task0 {
         int n;
         n = sc.nextInt(); // вводим n с клавиатуры
         int mass[][] = new int[n][n]; //инициализация массива размером NxN
-        for (int i = 0; i < mass.length; i++) { //Заполнение массива случайными числами от 0 до 9
+        for (int i = 0; i < mass.length; i++) { //Заполнение массива случайными числами от 0 до 51
             for (int j = 0; j < mass.length; j++)
                 mass[i][j] = r.nextInt(51);
         }
