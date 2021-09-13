@@ -3,7 +3,7 @@ package unit5;
 import java.util.Random;
 import java.util.Scanner;
 
-public class unit5CompOnOff {
+class unit5CompOnOff {
     public static void main(String[] args) {
         Computer comp = new Computer("Intel", "Sata 512Gb", "16 Gb");
         comp.show();

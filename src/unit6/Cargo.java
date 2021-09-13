@@ -2,16 +2,14 @@ package unit6;
 
 import java.util.Scanner;
 
-public class Cargo extends Nazemnii { //грузовой
+class Cargo extends Nazemnii { //грузовой
 
-    private int numberOfPassengers; //количество пассажиров
     private int loadCapacity;  //грузоподъёмность
     private int luggage;  //багаж
 
     public Cargo(String model, int weigth, int maxSpeed, int power, int numberWheels, int fuelСonsumption,
-                 int numberOfPassengers, int loadCapacity) {
+                  int loadCapacity) {
         super(model, weigth, maxSpeed, power, numberWheels, fuelСonsumption);
-        this.numberOfPassengers = numberOfPassengers;
         this.loadCapacity = loadCapacity;
     }
 
@@ -22,22 +20,13 @@ public class Cargo extends Nazemnii { //грузовой
         String power = Integer.toString(getPower());
         String numberWheels = Integer.toString(getNumberWheels());
         String fuelСonsumption = Integer.toString(getFuelСonsumption());
-        String numberOfPassengers = Integer.toString(getNumberOfPassengers());
         String loadCapacity = Integer.toString(getLoadCapacity());
         String powerWT = Double.toString(powerWT(getPower()));
         String kharak = "model: " + model + "\nweigth: " + weigth + "\nmaxSpeed: " + maxSpeed + "\npower" + power + "\nnumberWheels: " +
-                numberWheels + "\nfuelСonsumption: " + fuelСonsumption + "\nnumberOfPassengers: " + numberOfPassengers + "\nloadCapacity: " +
-                loadCapacity + "\npowerWT: " + powerWT;
+                numberWheels + "\nfuelСonsumption: " + fuelСonsumption +  "\nloadCapacity: " + loadCapacity + "\npowerWT: " + powerWT;
         return kharak;
     }
 
-    public int getNumberOfPassengers() {
-        return numberOfPassengers;
-    }
-
-    public void setNumberOfPassengers(int numberOfPassengers) {
-        this.numberOfPassengers = numberOfPassengers;
-    }
 
     public int getLoadCapacity() {
         return loadCapacity;
